@@ -53,4 +53,11 @@ const appMenuItems = <MenuItem>[
     icon: Icons.check_box_outline_blank_rounded
   ),
 
+  MenuItem(
+    title: 'UI Controls + Tiles',
+    subTitle: 'Various controllers in Flutter',
+    link: '/ui_controls',
+    icon: Icons.car_rental_outlined
+  ),
+
 ];
