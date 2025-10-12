@@ -26,11 +26,11 @@ class _ProgressView extends StatelessWidget {
       child: Column(
         children: const [
           SizedBox(height: 30,),
-          Text('Circular progress indicator'),
+          Text('Circular Progress Indicator'),
           SizedBox(height: 10,),
           CircularProgressIndicator(strokeWidth: 2, backgroundColor: Colors.black45),
           SizedBox(height: 20,),
-          Text('Circular y linear progress indicator controlado'),
+          Text('Controlled Circular and Linear Progress Indicators'),
           SizedBox(height: 10,),
           _ControlledProgressIndicator(),
         ],
