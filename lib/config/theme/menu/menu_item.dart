@@ -19,7 +19,7 @@ class MenuItem {
 const appMenuItems = <MenuItem>[
 
   MenuItem(
-    title: 'Rivepod Counter',
+    title: 'Riverpod Counter',
     subTitle: 'Riverpod Introduction',
     link: '/counter',
     icon: Icons.add
@@ -47,7 +47,7 @@ const appMenuItems = <MenuItem>[
   ),
 
   MenuItem(
-    title: 'Snackbars and dialogs',
+    title: 'Snackbars and Dialogs',
     subTitle: 'Screen Indicators',
     link: '/snackbars',
     icon: Icons.info_outline
@@ -79,6 +79,13 @@ const appMenuItems = <MenuItem>[
     subTitle: 'Infinite Lists and Pull to Refresh',
     link: '/infinite_scroll',
     icon: Icons.list_alt_rounded
+  ),
+
+  MenuItem(
+    title: 'Change Theme',
+    subTitle: 'Changes the theme of the app',
+    link: '/theme_changer',
+    icon: Icons.color_lens_outlined
   ),
 
 ];
