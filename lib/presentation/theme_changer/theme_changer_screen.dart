@@ -11,7 +11,7 @@ class ThemeChangerScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, ref) {
 
-    final isDarkMode = ref.watch(isDarkModeProvider);
+    final isDarkMode = ref.watch(themeNotifierProvider).isDarkMode;
 
     return Scaffold(
       appBar: AppBar(
@@ -19,8 +19,8 @@ class ThemeChangerScreen extends ConsumerWidget {
         actions: [
           IconButton(
             onPressed: () {
-              ref.read(isDarkModeProvider.notifier)
-                .update((state) => !state);
+              ref.read(themeNotifierProvider.notifier)
+                .toggleDarkMode();
             },
             icon: isDarkMode ? Icon(Icons.dark_mode_outlined) : Icon(Icons.light_mode_outlined)
           )
@@ -38,7 +38,7 @@ class _ThemeChangerView extends ConsumerWidget {
   Widget build(BuildContext context, ref) {
 
     final List<Color> colors = ref.watch(colorListProvider);
-    final int selectedIndexColor = ref.watch(selectedIndexColorProvider);
+    final int selectedIndexColor = ref.watch(themeNotifierProvider).selectedColor;
 
     return ListView.builder(
       itemCount: colors.length,
@@ -48,7 +48,8 @@ class _ThemeChangerView extends ConsumerWidget {
         return RadioGroup(
           groupValue: selectedIndexColor,
           onChanged: (value) {
-            ref.read(selectedIndexColorProvider.notifier).state = index;
+            ref.read(themeNotifierProvider.notifier)
+              .changeColorIndex(index);
           },
           child: RadioListTile(
             title: Text('Este color', style: TextStyle(color: color),),
