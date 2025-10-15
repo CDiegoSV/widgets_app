@@ -19,17 +19,73 @@ class MenuItem {
 const appMenuItems = <MenuItem>[
 
   MenuItem(
-    title: 'Botones',
-    subTitle: 'Varios Botones en Flutter',
+    title: 'Riverpod Counter',
+    subTitle: 'Riverpod Introduction',
+    link: '/counter',
+    icon: Icons.add
+  ),
+
+  MenuItem(
+    title: 'Buttons',
+    subTitle: 'Various Buttons in Flutter',
     link: '/buttons',
     icon: Icons.smart_button_outlined
   ),
 
   MenuItem(
-    title: 'Tarjetas',
-    subTitle: 'Un contenedor estilizado',
+    title: 'Cards',
+    subTitle: 'An Stylized Container',
     link: '/cards',
     icon: Icons.credit_card
+  ),
+
+  MenuItem(
+    title: 'Progress Indicators',
+    subTitle: 'Standard and controlled',
+    link: '/progress',
+    icon: Icons.refresh_rounded
+  ),
+
+  MenuItem(
+    title: 'Snackbars and Dialogs',
+    subTitle: 'Screen Indicators',
+    link: '/snackbars',
+    icon: Icons.info_outline
+  ),
+
+  MenuItem(
+    title: 'Animated Container',
+    subTitle: 'Stateful Animated Widget',
+    link: '/animated',
+    icon: Icons.check_box_outline_blank_rounded
+  ),
+
+  MenuItem(
+    title: 'UI Controls + Tiles',
+    subTitle: 'Various controllers in Flutter',
+    link: '/ui_controls',
+    icon: Icons.car_rental_outlined
+  ),
+
+  MenuItem(
+    title: 'App Introduction',
+    subTitle: 'Quick Introduction Tutorial',
+    link: '/app_tutorial',
+    icon: Icons.accessible_rounded
+  ),
+
+  MenuItem(
+    title: 'Infinite Scroll and Pull',
+    subTitle: 'Infinite Lists and Pull to Refresh',
+    link: '/infinite_scroll',
+    icon: Icons.list_alt_rounded
+  ),
+
+  MenuItem(
+    title: 'Change Theme',
+    subTitle: 'Changes the theme of the app',
+    link: '/theme_changer',
+    icon: Icons.color_lens_outlined
   ),
 
 ];
